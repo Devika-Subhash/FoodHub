@@ -1,115 +1,72 @@
 .restaurantCard {
-
     background: white;
-
     border-radius: 18px;
-
     overflow: hidden;
-
     box-shadow: 0 10px 25px rgba(0,0,0,.08);
-
     transition: .35s;
-
     cursor: pointer;
 }
 
 .restaurantCard:hover{
-
-    transform: translateY(-8px);
+   transform: translateY(-8px);
 }
 
 .cardImage{
-
     position: relative;
-
     height: 220px;
 }
 
 .cardImage img{
-
     width:100%;
-
     height:100%;
-
     object-fit:cover;
 }
 
 .favoriteBtn{
-
     position:absolute;
-
     top:15px;
-
     right:15px;
-
     width:40px;
-
     height:40px;
-
     border:none;
-
     border-radius:50%;
-
     background:white;
-
     color:#e23744;
-
     display:grid;
-
     place-items:center;
 }
 
 .ratingBadge{
-
     position:absolute;
-
     bottom:15px;
-
     left:15px;
-
     background:#1b8f3d;
-
     color:white;
-
     padding:6px 12px;
-
     border-radius:30px;
-
     display:flex;
-
     align-items:center;
-
     gap:6px;
-
     font-size:.9rem;
 }
 
 .cardDetails{
-
     padding:20px;
 }
 
 .cardDetails h3{
-
     margin-bottom:10px;
-
     color:#222;
 }
 
 .cuisine{
-
     color:#666;
-
     margin-bottom:15px;
 }
 
 .cardInfo{
-
     display:flex;
-
     justify-content:space-between;
-
     font-size:.9rem;
-
     color:#444;
 }

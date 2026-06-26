@@ -1,6 +1,6 @@
 .categories{
     padding:50px 0 80px ;
-    background:#fafafa;
+    background:#9490901b;
 }
 
 .wrapper{
@@ -30,11 +30,8 @@
 }
 
 .categoryGrid{
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-
     gap:25px;
 }
 
@@ -48,7 +45,7 @@
     border-radius: 18px;
     padding: 25px 20px;
     transition: transform .3s ease,
-                box-shadow .3s ease;
+    box-shadow .3s ease;
      cursor: pointer;
 }
 
@@ -70,8 +67,6 @@
 }
 
 .categoryCard h3{
-
     margin-top:20px;
-
     color:#333;
 }

@@ -1,0 +1,48 @@
+.collections {
+  padding: 50px 0 80px;
+  background: #f7f3f3f4;
+}
+
+.collectionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.collectionCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
+.collectionCard img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  transition: transform .4s ease;
+}
+
+.collectionCard:hover img {
+  transform: scale(1.08);
+}
+
+.collectionContent {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      transparent,
+      rgba(0,0,0,.75)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 25px;
+  color: white;
+}
+
+.collectionContent h3 {
+  margin-bottom: 8px;
+}
