@@ -1,0 +1,41 @@
+import "./Navbar.css";
+import { FaSearch } from "react-icons/fa";
+
+function Navbar() {
+  const navItems = ["Home", "Explore", "Login"];
+
+  return (
+    <header className="navbar">
+      <div className="navContainer">
+
+        <div className="logo">
+          <h2>FoodHub</h2>
+        </div>
+
+        <div className="searchBox">
+          <FaSearch className="searchIcon" />
+
+          <input
+            type="text"
+            placeholder="Search restaurants or dishes"
+          />
+        </div>
+
+        <nav className="navMenu">
+          {navItems.map((item) => (
+            <a href="#" key={item}>
+              {item}
+            </a>
+          ))}
+
+          <button className="signupBtn">
+            Sign Up
+          </button>
+        </nav>
+
+      </div>
+    </header>
+  );
+}
+
+export default Navbar;
