@@ -2,7 +2,16 @@ import "./FeaturedRestaurants.css";
 import RestaurantCard from "./RestaurantCard";
 import restaurants from "../data/restaurants";
 
-function FeaturedRestaurants() {
+function FeaturedRestaurants({ searchText }) {
+ const filteredRestaurants = restaurants.filter((restaurant) => {
+    const keyword = searchText.toLowerCase();
+    return (
+        restaurant.name.toLowerCase().includes(keyword) ||
+        restaurant.cuisine.toLowerCase().includes(keyword)
+    );
+});
+
+
   return (
     <section className="featuredRestaurants">
 
@@ -20,14 +29,30 @@ function FeaturedRestaurants() {
 
         <div className="restaurantGrid">
 
-          {restaurants.map((restaurant) => (
+    {filteredRestaurants.length ? (
+
+        filteredRestaurants.map((restaurant) => (
+
             <RestaurantCard
-              key={restaurant.id}
-              restaurant={restaurant}
+                key={restaurant.id}
+                restaurant={restaurant}
             />
-          ))}
+
+        ))
+
+    ) : (
+
+        <div className="emptyState">
+
+            <h3>No restaurants found</h3>
+
+            <p>Try searching with a different keyword.</p>
 
         </div>
+
+    )}
+
+</div>
 
       </div>
 

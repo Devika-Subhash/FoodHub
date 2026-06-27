@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import { FaSearch } from "react-icons/fa";
 
-function Navbar() {
+function Navbar({ searchText, setSearchText }) {
   const navItems = ["Home", "Explore", "Login"];
 
   return (
@@ -18,6 +18,8 @@ function Navbar() {
           <input
             type="text"
             placeholder="Search restaurants or dishes"
+             value={searchText}
+    onChange={(event) => setSearchText(event.target.value)}
           />
         </div>
 
