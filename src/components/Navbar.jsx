@@ -19,8 +19,18 @@ function Navbar({ searchText, setSearchText }) {
             type="text"
             placeholder="Search restaurants or dishes"
              value={searchText}
-    onChange={(event) => setSearchText(event.target.value)}
-          />
+
+  onChange={(event) => {
+  const value = event.target.value;
+  setSearchText(value);
+  if (value.trim().length > 0) {
+    document.getElementById("restaurants").scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+}}
+/>
         </div>
 
         <nav className="navMenu">

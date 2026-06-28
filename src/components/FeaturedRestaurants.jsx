@@ -4,16 +4,19 @@ import restaurants from "../data/restaurants";
 
 function FeaturedRestaurants({ searchText }) {
  const filteredRestaurants = restaurants.filter((restaurant) => {
-    const keyword = searchText.toLowerCase();
+  
+const keyword = searchText.toLowerCase();
     return (
         restaurant.name.toLowerCase().includes(keyword) ||
         restaurant.cuisine.toLowerCase().includes(keyword)
     );
 });
+console.log("Search:", searchText);
+console.log("Filtered:", filteredRestaurants);
 
 
   return (
-    <section className="featuredRestaurants">
+    <section id="restaurants" className="featuredRestaurants">
 
       <div className="container">
 
@@ -32,11 +35,11 @@ function FeaturedRestaurants({ searchText }) {
     {filteredRestaurants.length ? (
 
         filteredRestaurants.map((restaurant) => (
-
-            <RestaurantCard
-                key={restaurant.id}
-                restaurant={restaurant}
-            />
+         
+           <RestaurantCard
+  key={restaurant.id}
+  restaurant={restaurant}
+/>
 
         ))
 

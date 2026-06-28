@@ -21,11 +21,11 @@ function Hero() {
         </p>
 
         <div className="heroButtons">
-          <button className="primaryBtn">
+          <button className="primaryBtn" onClick={() => document.getElementById("restaurants").scrollIntoView({ behavior: "smooth" })}>
             Explore Restaurants
           </button>
 
-          <button className="secondaryBtn">
+          <button className="secondaryBtn" onClick={() => document.getElementById("collections").scrollIntoView({ behavior: "smooth" })}>
             View Collections
           </button>
         </div>

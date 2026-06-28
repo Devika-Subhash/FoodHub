@@ -3,7 +3,7 @@ import collections from "../data/collections";
 
 function Collections() {
   return (
-    <section className="collections">
+    <section id="collections" className="collections">
       <div className="container">
 
         <div className="sectionHeading">
