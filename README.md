@@ -83,14 +83,27 @@ npm run dev
 
 ## 📸 Screenshots
 
-Add screenshots of the following sections:
+### 🏠 Home Page
 
-* Home Page
-* Hero Section
-* Featured Restaurants
-* Collections
-* Footer
+![Home Page](./screenshots/home.png)
 
+---
+
+### 🍽️ Featured Restaurants
+
+![Featured Restaurants](./screenshots/restaurants.png)
+
+---
+
+### 📚 Collections
+
+![Collections](./screenshots/collections.png)
+
+---
+
+### 📄 Footer
+
+![Footer](./screenshots/footer.png)
 ---
 
 ## 💡 Future Improvements
@@ -102,6 +115,5 @@ Add screenshots of the following sections:
 * Online ordering
 * Dark mode
 
----
 
 
